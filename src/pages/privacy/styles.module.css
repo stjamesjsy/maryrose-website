@@ -1,0 +1,12 @@
+.page {
+    background-color: #1c242b;
+}
+
+.content h1 { 
+    margin-bottom: 30px;
+    font-family: Inter, sans-serif;
+}
+
+.content p {
+    margin-bottom: 30px;
+}

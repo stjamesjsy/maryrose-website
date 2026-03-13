@@ -1,0 +1,27 @@
+.item {
+    background-color: var(--stjames-cardbg);
+    border-radius: 16px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 16px 25px;
+   
+}
+
+.title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text {
+    font-size: 15px;
+    color: white;
+    padding: 16px 25px;
+    background-color: #242e3c;
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+}

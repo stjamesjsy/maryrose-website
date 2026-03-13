@@ -1,0 +1,296 @@
+.hero {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 85px;
+    overflow: hidden;
+    background: linear-gradient(rgba(26, 31, 37, 0.4) 0%, rgba(26, 31, 37, 0.1) 40%, rgba(26, 31, 37, 0.85) 100%);
+}
+
+.heroBg {
+    position: absolute;
+    inset: 0;
+    background-image: url(/images/hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.heroContent {
+    position: relative;
+    z-index: 1;
+}
+
+.heroInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heroInnerContent {
+    max-width: 600px;
+    text-align: center;
+}
+
+.logo {
+    height: 16rem;
+    margin-bottom: 16px;
+}
+
+.mary {
+    color: var(--mary-blue);
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.hero h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 8rem;
+    line-height: 85px;
+}
+
+.tagline {
+    font-size: 22px;
+    font-weight: 100 !important;
+    text-transform: uppercase;
+    letter-spacing: 4;
+}
+
+.tagline2 {
+    margin-top: 30px;
+    font-size: 16px;
+    color: #a7a6a6;
+}
+
+.heroButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 15px;
+}
+
+.scrollButton {
+    position: absolute;
+    bottom: 20px;
+    left: 49%;
+    right: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: scroll-bounce 1s infinite ease-in-out;
+    gap: 5px;
+}
+
+.headerSeparatorBar {
+    height: 50px;
+    width: 100%;
+    background-color: var(--mary-blue);
+}
+
+.sectionTitle {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    font-size: 5rem;
+}
+
+.sectionTagline {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--mary-blue);
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.sectionContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.whatsOnSection {
+    background-color: var(--mary-gray);
+    padding: 50px 0;
+}
+
+.whatsOnGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.whatsOnItem {
+    background-color: #1a1f26;
+    padding: 20px 22px;
+    border-radius: 12px;
+    text-align: left;
+    position: relative;
+}
+
+.whatsOnItem h3 {
+    font-size: 26px;
+    font-family: Inter, sans-serif;
+    text-transform: uppercase;
+}
+
+.whatsOnDate {
+    margin-top: 10px;
+    font-size: 14px;
+    color: var(--mary-blue);
+}
+
+.whatsOnTime {
+    font-size: 14px;
+    margin-top: 3px;
+}
+
+.whatsOnDesc {
+    font-size: 14px;
+    margin-top: 10px;
+    color:rgb(190, 190, 191);
+}
+
+.whatsOnIcon {
+    position: absolute;
+    font-size: 50px;
+    top: 22px;
+    right: 25px;
+}
+
+.whatsOnFacebook {
+    margin-top: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.whatsOnFacebook h3 {
+    font-size: 26px;
+    font-family: Inter, sans-serif;
+    text-transform: uppercase;
+}
+
+.whatsOnSocialButtons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sectionGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 40px;
+}
+
+.sectionGridImage {
+    height: auto;
+    width: 100%;
+}
+
+.sectionHeader {
+    font-size: 50px;
+    line-height: 1.1;
+    margin-bottom: 12px;
+}
+
+.button {
+    background: none;
+    border: 1px solid var(--mary-blue);
+    font-size: 14px;
+    padding: 12px 30px;
+    font-weight: bold;
+    border-radius: 20px;
+    color: var(--mary-blue);
+    text-transform: uppercase;
+    transition: transform 200ms ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    color: var(--mary-blue);
+    cursor: pointer;
+}
+
+.buttonBlue {
+    background-color: var(--mary-blue);
+    color: black;
+}
+
+.buttonBlue:hover {
+    color: black;
+}
+
+.contactSection {
+    background: rgb(28, 36, 43);
+    padding: 50px 0;
+}
+
+@media screen and (max-width: 768px) {
+    .tagline {
+        font-size: 20px;
+    }
+
+    .sectionGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding-top: 110px;
+    }
+
+    .hero h1 {
+        font-size: 50px;
+        line-height: 55px;
+    }
+
+    .sectionTitle {
+        font-size: 4rem;
+        line-height: 1;
+        margin-top: 10px;
+        margin-bottom: 40px;
+    }
+
+    .whatsOnGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo {
+        height: 9rem;
+    }
+
+    .whatsOnFacebook {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .hero {
+        text-align: center;
+    }
+}
+
+@keyframes scroll-bounce {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}

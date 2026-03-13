@@ -1,0 +1,61 @@
+.contactContent {
+    display: flex;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 20px 0;
+    width: 1000px;
+}
+
+.col {
+    flex: 1 1 0;
+}
+
+.contactContent h1 {
+    margin-bottom: 20px;
+}
+
+.contactDetails {
+    background-color: var(--stjames-cardbg);
+    padding: 25px 30px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.contactItem {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.contactItemIcon {
+    font-size: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contactItemTitle {
+    font-weight: 600;
+    font-size: 20px;
+    text-align: left; 
+}
+
+.socialLinks {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .contactContent {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contactDetails {
+        padding: 25px 15px;
+    }
+
+    .contactItemTitle {
+        font-size: 16px;
+    }
+}
