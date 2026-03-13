@@ -31,7 +31,7 @@ export default function Index() {
                                 <div className={styles.heroInnerContent}>
                                     <img className={styles.logo} src="/images/logo.png" />
                                     {/* <h1>THE <span className={styles.mary}>MARY</span></h1>
-                                <h1>ROSE</h1> */}
+                                        <h1>ROSE</h1> */}
                                     <p className={styles.tagline}>
                                         Pub · Bar · Nightclub
                                     </p>
@@ -78,9 +78,9 @@ export default function Index() {
                                     <LuHeadphones className={styles.whatsOnIcon} />
                                     <h3>Live DJ</h3>
                                     <p className={styles.whatsOnDate}><LuCalendar /> Every Saturday</p>
-                                    <p className={styles.whatsOnTime}><LuClock /> 22:00 - 02:00</p>
+                                    <p className={styles.whatsOnTime}><LuClock /> 22:30 - 02:00</p>
                                     <p className={styles.whatsOnDesc}>
-                                        Our resident DJs keeps the energy high every Saturday. Dance the night away with the best beats from 9:30 PM until close.
+                                        Our resident DJs keeps the energy high every Saturday. Dance the night away with the best beats from 10:30 PM until close.
                                     </p>
                                 </div>
                                 <div className={styles.whatsOnItem}>
@@ -89,7 +89,7 @@ export default function Index() {
                                     <p className={styles.whatsOnDate}><LuCalendar /> All Week</p>
                                     <p className={styles.whatsOnTime}><LuClock /> Whenever the action is on</p>
                                     <p className={styles.whatsOnDesc}>
-                                        Never miss a match. We screen live sports across multiple screens — football, rugby, boxing and more. Pull up a stool and cheer on your team.
+                                        Never miss a match. We screen live sports across multiple screens - football, rugby and more. Pull up a stool and cheer on your team.
                                     </p>
                                 </div>
                             </div>

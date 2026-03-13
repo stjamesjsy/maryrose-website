@@ -20,8 +20,7 @@ export default function ContactSection() {
                     </ContactItem>
                     <ContactItem title="Opening Hours" icon={<FiClock color="var(--mary-blue)" />}>
                         Monday: Closed<br/>
-                        Tuesday - Saturday: TODO<br/>
-                        Sunday: TODO
+                        Tuesday - Sunday: 19:00 - 02:00
                     </ContactItem>
                     <ContactItem title="Get In Touch" icon={<FiMail color="var(--mary-blue)" />}>
                         <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
