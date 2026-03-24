@@ -3,7 +3,7 @@ import styles from "./styles.module.css";
 import clsx from "clsx";
 
 // TODO
-const submitUrl = "https://formsubmit.co/ajax/22df9bd1beabb23825d1afb4c0ce1f66";
+const submitUrl = "https://formsubmit.co/ajax/craigroberts@jkolijersey.com";
 
 enum SubmitState {
     Idle,
