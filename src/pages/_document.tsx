@@ -11,17 +11,17 @@ export default function Document() {
                 <Main />
                 <NextScript />
                 <Script
-                    src="https://www.googletagmanager.com/gtag/js?id=G-WCZTFPN1W9"
+                    src="https://www.googletagmanager.com/gtag/js?id=G-61Y69VKC6P"
                     strategy="afterInteractive"
                 />
-                {/* <Script id="gtag-init" strategy="afterInteractive">
+                <Script id="gtag-init" strategy="afterInteractive">
                     {`
                         window.dataLayer = window.dataLayer || [];
                         function gtag(){dataLayer.push(arguments);}
                         gtag('js', new Date());
-                        gtag('config', 'G-WCZTFPN1W9');
+                        gtag('config', 'G-61Y69VKC6P');
                     `}
-                </Script> */}
+                </Script>
             </body>
         </Html>
     );
