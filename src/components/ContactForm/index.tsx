@@ -2,8 +2,7 @@ import { FormEvent, useState } from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 
-// TODO
-const submitUrl = "https://formsubmit.co/ajax/craigroberts@jkolijersey.com";
+const submitUrl = "https://formsubmit.co/ajax/325db3fa1a39a26c2dbad36c1bb7d36b";
 
 enum SubmitState {
     Idle,
