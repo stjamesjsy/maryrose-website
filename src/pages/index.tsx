@@ -37,7 +37,7 @@ export default function Index() {
                                         Pub · Bar · Nightclub
                                     </p>
                                     <p className={styles.tagline2}>
-                                        Sports on the big screens. Karaoke every Friday. Live DJ every Saturday. The heart of Jersey's nightlife.
+                                        Sports on the big screens. Karaoke every Friday. Quiz night every other Tuesday. Located at the Weighbridge, the heart of Jersey's nightlife.
                                     </p>
 
                                     <div className={styles.heroButtons}>
