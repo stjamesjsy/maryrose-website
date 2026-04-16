@@ -9,6 +9,8 @@ import styles from "./styles.module.css";
 import { LuCalendar, LuChevronDown, LuClock, LuFacebook, LuHeadphones, LuInstagram, LuMic, LuVolleyball } from "react-icons/lu";
 import { ContactForm } from "@/components/ContactForm";
 import Image from "next/image";
+import { ImageGallery } from "react-image-grid-gallery";
+import { mainGallery } from "@/gallery";
 
 export default function Index() {
     const contactRef = useRef<HTMLDivElement>(null);
@@ -110,12 +112,24 @@ export default function Index() {
                     </Container>
                 </div>
 
+                <div className={styles.gallerySection}>
+                    <Container>
+                        <div className={styles.sectionContent}>
+                            <h2 className={styles.sectionTitle} style={{ marginBottom: "40px" }}>Gallery</h2>
+
+                            <div className={styles.galleryWrapper}>
+                                <ImageGallery gapSize={10} imagesInfoArray={mainGallery} />
+                            </div>
+                        </div>
+                    </Container>
+                </div>
+
                 <div className={styles.contactSection} id="contact" ref={contactRef}>
                     <Container>
                         <div className={styles.sectionContent}>
                             <div className={styles.sectionTagline}>Got a question?</div>
                             <h2 className={styles.sectionTitle}>Get in touch</h2>
-                            
+
                             <ContactSection />
                         </div>
                     </Container>
