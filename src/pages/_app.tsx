@@ -21,7 +21,7 @@ export default function App({ Component, pageProps }: AppProps) {
                 <meta property="og:description" content="A late night venue in Jersey, Channel Islands. Watch live sports, sing karoke or enjoy live DJs." />
                 <meta property="og:url" content="https://themaryrose.je" />
                 <meta property="og:site_name" content="The Mary Rose Jersey" />
-                <!-- TODO: Social preview -->
+                {/*<!-- TODO: Social preview -->*/}
 
                 <link rel="canonical" href="https://themaryrose.je" />
 
