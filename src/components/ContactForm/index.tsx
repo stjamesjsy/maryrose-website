@@ -2,7 +2,7 @@ import { FormEvent, useState } from "react";
 import styles from "./styles.module.css";
 import clsx from "clsx";
 
-const submitUrl = "https://formsubmit.co/ajax/325db3fa1a39a26c2dbad36c1bb7d36b";
+const submitUrl = "https://mailer.glitch.je/api/contact";
 
 enum SubmitState {
     Idle,
@@ -24,6 +24,8 @@ export function ContactForm() {
     const [email, setEmail] = useState("");
     const [subject, setSubject] = useState("");
     const [message, setMessage] = useState("");
+
+    const [error, setError] = useState("");
 
     const [state, setState] = useState<SubmitState>(SubmitState.Idle);
 
@@ -48,18 +50,22 @@ export function ContactForm() {
                     name,
                     email,
                     subject,
-                    message
+                    message,
+                    type: "mary"
                 })
             });
 
             const data = await response.json();
 
-            if (data.success !== "false") {
+            if (data.success !== false) {
                 console.log("Contact form submitted successfuly", data);
 
                 setState(SubmitState.Success);
             } else {
                 console.log("Error submitting contact form", data);
+                if (data?.error) {
+                    setError(data.error);
+                }
                 setState(SubmitState.Error);
             }
         } catch (e) {
@@ -73,6 +79,7 @@ export function ContactForm() {
             {state === SubmitState.Error && (
                 <div className={clsx(styles.formError, styles.banner)}>
                     Failed to submit. Please try again later.
+                     {error && <><br/>{error}</>}
                 </div>
             )}
             {state === SubmitState.Success && (
