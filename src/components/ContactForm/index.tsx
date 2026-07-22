@@ -47,10 +47,10 @@ export function ContactForm() {
                 },
                 body: JSON.stringify({
                     _subject: `New website submission (${randomNumbers()})`,
-                    name,
-                    email,
-                    subject,
-                    message,
+                    "Name": name,
+                    "Email": email,
+                    "Subject": subject,
+                    "Message": message,
                     type: "mary"
                 })
             });
