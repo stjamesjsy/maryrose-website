@@ -79,7 +79,7 @@ export function WhatsOn() {
       <div aria-hidden="true" className="mary-glow-sea pointer-events-none absolute -right-60 top-20 h-[700px] w-[700px]" />
       <div className="mary-container relative">
         <div className="mb-12 flex flex-col gap-10 md:mb-16 lg:flex-row lg:items-end lg:justify-between">
-          <Heading eyebrow="Every week" lines={["What's on at", "the Mary"]} />
+          <Heading eyebrow="Every week" lines={["What's on at", "the Mary Rose"]} />
         </div>
 
         <div className="grid gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] lg:gap-16">
