@@ -12,7 +12,7 @@ export function Footer() {
       <div className="mary-container relative grid gap-12 py-16 md:grid-cols-2 md:py-20 lg:grid-cols-12">
         <div className="flex flex-col gap-6 lg:col-span-4">
           <Logo className="h-14 w-fit md:h-16" />
-          <p className="max-w-xs text-white/60">Pub &bull; Bar &bull; Nightclub. At the Weighbridge, the heart of Jersey's nightlife.</p>
+          <p className="max-w-xs text-white/60">Pub, Bar, Nightclub. At the Weighbridge, the heart of Jersey's nightlife.</p>
 
           <div className="flex gap-2">
             <a href={SITE.instagram} target="_blank" rel="noopener noreferrer" aria-label="The Mary Rose on Instagram" className="flex h-11 w-11 items-center justify-center rounded-full border border-white/15 text-white transition-colors hover:border-mary-blue hover:bg-mary-blue hover:text-mary-ink">

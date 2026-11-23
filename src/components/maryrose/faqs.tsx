@@ -77,7 +77,7 @@ export function FaqsPage() {
         <div aria-hidden="true" className="mary-glow-sea pointer-events-none absolute -right-60 top-0 h-[700px] w-[700px]" />
         <div className="mary-container relative mb-12 flex flex-col gap-6 md:mb-16 lg:flex-row lg:items-end lg:justify-between">
           <div className="flex flex-col gap-6">
-            <h1 className="mary-display text-[clamp(2rem,5vw,4rem)] leading-[0.95] text-white">
+            <h1 className="mary-display text-[clamp(2.5rem,6vw,6rem)] leading-[0.95] text-white">
               <span className="block overflow-hidden pb-[0.06em]">
                 <motion.span
                   className="block"
