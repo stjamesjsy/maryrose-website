@@ -144,7 +144,7 @@ function Contact() {
 
   return (
     <section id="contact" className="relative scroll-mt-[var(--header-h)] overflow-hidden border-t border-mary-line py-24 md:py-32">
-      <div aria-hidden="true" className="mary-glow pointer-events-none absolute left-1/2 top-0 h-[520px] w-[820px] -translate-x-1/2 -translate-y-1/2" />
+      {/* <div aria-hidden="true" className="mary-glow pointer-events-none absolute left-1/2 top-0 h-[520px] w-[820px] -translate-x-1/2 -translate-y-1/2" /> */}
       <div className="mary-container relative flex flex-col items-center">
         <Heading eyebrow="Got a question?" lines={["Get in", "touch"]} accentSameLine center />
         <FadeUp className="mt-4 text-center text-white/70">Drop us a message and we'll get back to you as soon as we can.</FadeUp>

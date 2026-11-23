@@ -218,7 +218,7 @@ export function Events() {
 
   return (
     <section id="events" className="relative scroll-mt-[var(--header-h)] overflow-x-clip border-t border-mary-line bg-mary-night py-24 md:py-32">
-      <div aria-hidden="true" className="mary-glow pointer-events-none absolute -left-60 top-10 h-[640px] w-[640px]" />
+      {/* <div aria-hidden="true" className="mary-glow pointer-events-none absolute -left-60 top-10 h-[640px] w-[640px]" /> */}
       <div className="mary-container relative">
         <Heading eyebrow="Events" lines={["Coming", "up"]} accentSameLine className="mb-12 md:mb-16" />
 
