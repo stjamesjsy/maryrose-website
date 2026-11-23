@@ -2,6 +2,9 @@ import type { Metadata, Viewport } from "next";
 import { Bebas_Neue, Inter } from "next/font/google";
 import "./globals.css";
 import { PropsWithChildren } from "react";
+import Script from "next/script";
+
+const GA_ID = "G-61Y69VKC6P";
 
 const bebas = Bebas_Neue({ weight: "400", subsets: ["latin"], display: "swap", variable: "--font-bebas" });
 const inter = Inter({ subsets: ["latin"], display: "swap", variable: "--font-inter" });
@@ -26,7 +29,16 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: PropsWithChildren) {
   return (
     <html lang="en-GB" className={`${bebas.variable} ${inter.variable}`}>
-      <body className="maryrose flex min-h-screen flex-col">{children}</body>
+      <body className="maryrose flex min-h-screen flex-col">
+        {children}
+        <Script src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} strategy="afterInteractive" />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        </Script>
+      </body>
     </html>
   );
 }
