@@ -28,9 +28,7 @@ export const SITE = {
 
 export const OPENING_HOURS: [string, string][] = [
   ["Monday", "Closed"],
-  ["Tuesday - Thursday", "7pm - 2am"],
-  ["Friday", "3pm - 2am"],
-  ["Saturday & Sunday", "11:30am - 2am"]
+  ["Tuesday - Sunday", "7pm - 2am"]
 ];
 
 export type Night = {
